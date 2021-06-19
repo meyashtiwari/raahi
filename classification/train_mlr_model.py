@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
 import joblib
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -11,7 +11,7 @@ data_nodes = pd.read_csv(file_path)
 x = data_nodes[['Battery', 'Internal']].values
 y = data_nodes['Class'].values
 
-ml = LinearRegression()
+ml = LogisticRegression()
 ml.fit(x, y)
 
 # Save Model
