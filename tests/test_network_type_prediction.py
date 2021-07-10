@@ -22,7 +22,7 @@ print("\nScore:",dtc.score(x, y))
 
 plt.figure(figsize=(10,10))
 plt.scatter(y, y_pred, color='red')
-plt.plot(['MANET', 'DTN', 'Bluetooth'])
+plt.plot(['DTN', 'MANET', 'Bluetooth'])
 plt.xlabel('Actual')
 plt.ylabel('Predicted')
 plt.title('Network Prediction using Decision Tree Classifier')
