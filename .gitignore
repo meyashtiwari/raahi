@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .vscode/
+utils/
+models/network_prediction_model.pkl
+network-type-detection/decision_tree_network.py
+tests/test_network_type_prediction.py
