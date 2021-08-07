@@ -18,7 +18,7 @@ ml = joblib.load(model_path)
 y_pred = ml.predict(x)
 
 print("\nAccuracy:",ml.score(x, y))
-print("\nR2 Score:",r2_score(y, y_pred))
+# print("\nR2 Score:",r2_score(y, y_pred))
 
 plt.figure(figsize=(10,10))
 plt.scatter(y, y_pred, color='red')
